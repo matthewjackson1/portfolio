@@ -1,41 +1,296 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Matthew Jackson: full-stack developer</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <title>Matthew Jackson - Full Stack Developer</title>
         
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/index.css">
     </head>
     <body>
+        <nav id="header-nav">
+            <ul>
+                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <section id="intro">
-            <h1>Matthew Jackson</h1>
-            <h2>Full-stack js developer</h2>
+            <h1>Matthew Jackson<br/>
+           Full Stack Developer</h1>
             <a href="https://www.linkedin.com/in/matthewjackson145/">
                 <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://github.com/matthewjackson1">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github-square"></i>
             </a>
         </section>
+        <div class="container">
         <section id="portfolio">
             <h2>Portfolio</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <img src="assets/images/test.png" />
+                    <div class="col-pic">
+                        <img class="col-pic-img" src="assets/images/tempo_cap.jpg" />
                     </div>
-                    <div class="col-sm-8">
-                        <h3>Bloc Jams</h3>
+                    <div class="col-info">
+                        <h3>Tempo Music Player</h3>
                         <p>
-                            In this project, I build a react app music player. View album library, view songs on albums and play and pause from within the browser.
+                            In this project, I built a spotify-inspired music player,where users can:
+                            <ul>
+                                <li>View the album library</li>
+                                <li>Play, pause and skip tracks on albums</li>
+                                <li>Seek in the track and adjust volume</li>
+                            </ul>
                         </p>
-                        <button type="button" class="btn btn-primary">View project</button>
-                        <button type="button" class="btn btn-secondary"><i class="fab fa-github"></i></button>
+                        <div class="tag-container">
+                            <div class="tech-tag">HTML/CSS</div>
+                            <div class="tech-tag">Bootstrap</div> 
+                            <div class="tech-tag">React</div>
+                        </div>
+                        <div class="portfolio-btns">
+                            <button type="button" class="btn"><a href="https://matthewjackson1-tempo.herokuapp.com/">View project</a></button>
+                            <a href="https://github.com/matthewjackson1/tempo-music-player">
+                            <i class="fab fa-github btn-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <div class="row">
+                        <div class="col-pic">
+                            <img class="col-pic-img" src="assets/images/jabber_cap.jpg" />
+                        </div>
+                        <div class="col-info">
+                            <h3>Jabber Instant Messenger</h3>
+                            <p>
+                                Jabber works similarly to Slack messenger, functionality included:
+                                <ul>
+                                    <li>Create, edit and delete chat rooms</li>
+                                    <li>Post, edit and delete messages in chat rooms </li>
+                                    <li>Rooms and messages are saved for future visits</li>
+                                    <li>Authenticate as a user with Google</li>
+                                </ul>
+                            </p>
+                            <div class="tag-container">
+                                <div class="tech-tag">HTML/CSS</div> 
+                                <div class="tech-tag">Bootstrap</div> 
+                                <div class="tech-tag">React</div>
+                                <div class="tech-tag">Firebase</div> 
+                                <div class="tech-tag">Google sign in</div> 
+                            </div>
+                            <div class="portfolio-btns">
+                                <button type="button" class="btn"><a href="https://matthewjackson1-jabber.herokuapp.com/">View project</a></button>
+                                <a href="https://github.com/matthewjackson1/bloc-chat">
+                                <i class="fab fa-github btn-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-pic">
+                            <img class="col-pic-img" src="assets/images/summit_cap.jpg" />
+                        </div>
+                        <div class="col-info">
+                            <h3>Summit</h3>
+                            <p>
+                                Summit is a Reddit-style community site, which allows users to create an account and:
+                                <ul>
+                                    <li>View a list of all the discussion topics</li>
+                                    <li>Create, edit and delete discussion topics</li>
+                                    <li>View, create, edit and delete posts within topics</li>
+                                    <li>Comment on posts</li>
+                                    <li>Favourite and upvote posts.</li>
+                                    <li>View user profiles with recent activity</li>
+                                </ul>
+                            </p>
+                            <div class="tag-container">
+                                <div class="tech-tag">HTML/CSS</div> 
+                                <div class="tech-tag">Bootstrap</div>
+                                <div class="tech-tag">Node.js</div>
+                                <div class="tech-tag">PostgresQL</div>
+                                <div class="tech-tag">Express</div>
+                            </div>
+                            <div class="portfolio-btns">
+                                <button type="button" class="btn"><a href="https://matthewjackson1-bloccit.herokuapp.com/">View project</a></button>
+                                <a href="https://github.com/matthewjackson1/bloccit">
+                                <i class="fab fa-github btn-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-pic">
+                            <img class="col-pic-img" src="assets/images/source_cap.jpg" />
+                        </div>
+                        <div class="col-info">
+                            <h3>Source</h3>
+                            <p>
+                                Source is a site which works similarly to Wikipedia, with functionality allowing users to authenticate as well as:
+                                <ul>
+                                    <li>Create, edit and delete wikis</li>
+                                    <li>Pay to upgrade to a premium membership via Stripe so that you can add collaborators to be able to work on your wikis and make wikis private.</li>
+                                    <li>View user profiles with recent activity</li>
+                                </ul>
+                            </p>
+                            <div class="tag-container">
+                                    <div class="tech-tag">HTML/CSS</div> 
+                                    <div class="tech-tag">Bootstrap</div>
+                                    <div class="tech-tag">Node.js</div>
+                                    <div class="tech-tag">PostgresQL</div>
+                                    <div class="tech-tag">Express</div>
+                                    <div class="tech-tag">Stripe</div>
+                            </div>
+                            <div class="portfolio-btns">
+                                <button type="button" class="btn"><a href="https://matthewjackson1-blocipedia.herokuapp.com/">View project</a></button>
+                                <a href="https://github.com/matthewjackson1/blocipedia">
+                                <i class="fab fa-github btn-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-pic">
+                            <img class="col-pic-img" src="assets/images/wc_cap.jpg" />
+                        </div>
+                        <div class="col-info">
+                            <h3>Writing Clash</h3>
+                            <p>
+                                A proof of concept built as part of my qualification process with Bloc, this site allows users to register to enter free creative writing competitions and read what other users have written.
+                            </p>
+                            <div class="tag-container">
+                                <div class="tech-tag">HTML/CSS</div> 
+                                <div class="tech-tag">Bootstrap</div>
+                                <div class="tech-tag">Node.js</div>
+                                <div class="tech-tag">Express</div>
+                            </div>
+                            <div class="portfolio-btns">
+                                <button type="button" class="btn"><a href="https://matthewjackson1-capstone.herokuapp.com/">View project</button></a>
+                                <a href="https://github.com/matthewjackson1/bloc-capstone"><i class="fab fa-github btn-github"></i></a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-pic">
+                            <img class="col-pic-img" src="assets/images/shopa_cap.jpg" />
+                        </div>
+                        <div class="col-info">
+                            <h3>Shopa</h3>
+                            <p>
+                                Built under time constraint as part of a mock interview process, Shopa is a persistent shopping list that can be accessed from anywhere and on any device with an internet connection to enable collaborative shopping! It combines a Node/Express backend with a React front end.
+                            </p>
+                            <div class="tag-container">
+                                <div class="tech-tag">HTML/CSS</div> 
+                                <div class="tech-tag">Bootstrap</div> 
+                                <div class="tech-tag">React</div>
+                                <div class="tech-tag">Node.js</div>
+                                <div class="tech-tag">Express</div>
+                            </div>
+                            <div class="portfolio-btns">
+                                <button type="button" class="btn"><a href="https://matthewjackson1-shopa.herokuapp.com/">View project</a></button>
+                                <a href="https://github.com/matthewjackson1/shopa">
+                                <i class="fab fa-github btn-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+
             </div>
 
         </section>
-    
+        <section id="about">
+            <h2>About</h2>
+            <div id="about-container">
+                <img id="about-pic" src="assets/images/matthew_jackson_profile_pic.png" />
+                <p id="about-p">A full stack developer with over 4 years experience in product development at high growth startups.
+
+                    I’ve always sought out challenges, and my path has taken some twists and turns, from geneticist to computational biology researcher to startup product manager and full stack developer - I’ve never stopped looking for new problems to solve.
+
+                    As a web developer, I enjoy pushing my boundaries and applying attention to detail to create pragmatic and user-friendly solutions that have real business impact. I’m excited about what I can do for your company!
+                </p>   
+            </div>                 
+        </section>
+        <section id="exp-edu">
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="cv-item">
+                    <div class="cv-img-col">
+                        <img class="cv-img" src="assets/images/bloc_logo.jpg" />
+                    </div>
+                    <div class="cv-col">
+                        <h3>Bloc.io (2018)</h3>
+                        <p class="cv-info">
+                                Full Stack Web Development Bootcamp HTML/CSS, JavaScript (React and Node.js), BDD, computer science fundamentals.
+                        </p>
+                    </div>
+                </div>
+                <div class="cv-item">
+                        <div class="cv-img-col">
+                            <img class="cv-img" src="assets/images/lovecrafts_logo.jpg" />
+                        </div>
+                        <div class="cv-col">
+                            <h3>LoveCrafts (2014-current)</h3>
+                            <p class="cv-info">
+                                    Technical product manager for the ecommerce web proposition, working with software teams to build and improve our responsive website.
+                            </p>
+                        </div>
+                </div>
+                <div class="cv-item">
+                        <div class="cv-img-col">
+                            <img class="cv-img" src="assets/images/imperial_logo.png" />
+                        </div>
+                        <div class="cv-col">
+                            <h3>Imperial College London (2013-14)</h3>
+                            <p class="cv-info">
+                                    Computational biology research assistant and data analyst for the Department of Surgery and Cancer.
+                            </p>
+                        </div>
+                </div>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="cv-item">
+                        <div class="cv-img-col">
+                            <img class="cv-img" src="assets/images/imperial_logo.png">
+                        </div>
+                        <div class="cv-col">
+                            <h3>Imperial College London (2012-13)</h3>
+                            <p class="cv-info">
+                                    MSc Computational Biology - Distinction
+                            </p>
+                        </div>
+                </div>
+                <div class="cv-item">
+                        <div class="cv-img-col">
+                            <img class="cv-img" src="assets/images/cambridge_logo.png">
+                        </div>
+                        <div class="cv-col">
+                            <h3>University of Cambridge (2009-12)</h3>
+                            <p class="cv-info">
+                                    MA Natural Sciences (Genetics)
+                            </p>
+                        </div>
+                </div>
+            </section>
+        </section>
+        <section id="contact">
+            <h2>Contact me</h2>
+            <p id="contact-info">
+                    I am currently accepting freelance work, please get in touch if you think there’s something I can help you with!
+            </p>
+            <a href="https://www.linkedin.com/in/matthewjackson145/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/matthewjackson1">
+                <i class="fab fa-github-square"></i>
+            </a>
+        </section>
+    </div>
     </body>
+    <footer>
+        © Matthew Jackson 2018
+    </footer>
 </html>
